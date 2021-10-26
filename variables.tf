@@ -24,9 +24,13 @@ variable "idle_timeout" {
 }
 
 variable "public_subnet_ids" {
+  type = list(string)
+  default = []
 }
 
 variable "security_group_ids" {
+  type = list(string)
+  default = []
 }
 
 variable "namespace" {
